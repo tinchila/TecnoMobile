@@ -1,0 +1,209 @@
+[
+    {
+        "id": 1,
+        "category": "cellphones", 
+        "product": "Motorola", 
+        "model": "G32", 
+        "price": 88999, 
+        "image": "/assets/MotorolaG32128GBPink.png",
+        "stock": 20,
+        "description": "Cámara principal: 50 + 8 + 2 MP - Cámara frontal: 16MP (118°) F2.2 - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Android 12 - Procesador: Octa core 2.4 GHz - Bateria: 5000 mAh"
+    },{
+        "id": 2,
+        "category": "cellphones",
+        "product": "Motorola",
+        "model": "G42",
+        "price": 94999,
+        "image": "/assets/MotorolaG42128GBPink.png",
+        "stock": 15,
+        "description": "Cámara principal: 50MP (74.26°) F1.9 + 8MP (118°) F2.2 + 2MP (78°) F2.4 - Cámara frontal: 16MP (85.8°) F2.2 - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Android 12 - Procesador: Octa Core 2.4 GHz / Qualcomm Snapdragon 680 - Bateria: 5000 mAh"
+    },{
+        "id": 3, 
+        "category": "cellphones", 
+        "product": "Motorola", 
+        "model": "G23", 
+        "price": 85999, 
+        "image": "/assets/MotorolaG23128GBWhite.png", 
+        "stock": 10,
+        "description": "Cámara principal: 50MP - Cámara frontal: 16MP - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Android 13 - Procesador: Octa Core - Bateria: 5000 mAh"
+    },{
+        "id": 4, 
+        "category": "cellphones", 
+        "product": "Samsung", 
+        "model": "Galaxy A04s", 
+        "price": 89999, 
+        "image": "/assets/SamsungGalaxyA04s128GB.png", 
+        "stock": 12,
+        "description": "Cámara principal: 50MP - Cámara frontal: 5MP - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Android 13 - Procesador: Octa Core - Bateria: 5000 mAh"
+    },{
+        "id": 5, 
+        "category": "cellphones", 
+        "product": "Samsung", 
+        "model": "Galaxy A14s", 
+        "price": 98999, 
+        "image": "/assets/SamsungGalaxyA14s128GB.png", 
+        "stock": 13,
+        "description": "Cámara principal: 50MP - Cámara frontal: 13MP - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Android 13 - Procesador: Octa Core - Bateria: 5000 mAh"
+    },{
+        "id": 6, 
+        "category": "cellphones", 
+        "product": "Samsung", 
+        "model": "Galaxy A54s", 
+        "price": 203999, 
+        "image": "/assets/SamsungGalaxyA54s256GB.png", 
+        "stock": 25,
+        "description": "Cámara principal: 50.0 MP + 12.0 MP + 5.0 MP - Cámara frontal: 32.0 MP - Memoria interna (ROM): 128 GB - Memoria Ram: 8 GB - Sistema operativo: Android 13 - Procesador: Octa-Core 2.4GHz, 2GHz - Bateria: 5000 mAh"
+    },{
+        "id": 7, 
+        "category": "cellphones", 
+        "product": "Samsung" , 
+        "model": "Galaxy S21 FE", 
+        "price": 274999, 
+        "image": "/assets/SamsungGalaxyS21FE128GB.png", 
+        "stock": 20,
+        "description": "Cámara principal: 12 mp + 12 mp + 8 mp - Cámara frontal: 32.0 MP - Memoria interna (ROM): 128 GB - Memoria Ram: 6 GB - Sistema operativo: Android 13 - Procesador: Exynos 2100 / Octa-Core 2.9GHz, 2.8GHz, 2.2GHz - Bateria: 4500 mAh"
+    },{
+        "id": 8, 
+        "category": "cellphones", 
+        "product": "Xiaomi" , 
+        "model": "Poco F3", 
+        "price": 309499, 
+        "image": "/assets/XiaomiPocoF3128GBWhite.png", 
+        "stock": 18,
+        "description": "Cámara principal: 48 mp - Cámara frontal: 20 MP - Memoria interna (ROM): 128 GB - Memoria Ram: 6 GB - Sistema operativo: MIUI 12 para POCO - Procesador: Qualcomm® Snapdragon™ 870 - Bateria: 4520 mAh"
+    },{
+        "id": 9, 
+        "category": "cellphones", 
+        "product": "Xiaomi" , 
+        "model": "Poco X4 Pro", 
+        "price": 394124, 
+        "image": "/assets/XiaomiPocoX4Pro128GBWhite.png", 
+        "stock": 15,
+        "description": "Cámara principal: 108 mp - Cámara frontal: 16 MP - Memoria interna (ROM): 128 GB - Memoria Ram: 6 GB - Sistema operativo: MIUI 13 para POCO, basado en Android 11 - Procesador: Snapdragon® 695 - Bateria: 5000 mAh"
+    },{
+        "id": 10, 
+        "category": "cellphones", 
+        "product": "Xiaomi" , 
+        "model": "Redmi Note 10", 
+        "price": 129900, 
+        "image": "/assets/XiaomiRedmiNote10128GB.png", 
+        "stock": 11,
+        "description": "Cámara principal: 48 mp - Cámara frontal: 8 MP - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Androir 11 MIUI - Procesador: MediaTek MT6853 Dimensity 700 - Bateria: 5000 mAh"
+    },{   
+        "id": 11, 
+        "category": "cellphones", 
+        "product": "Xiaomi" , 
+        "model": "Redmi Note 11", 
+        "price": 104899, 
+        "image": "/assets/XiaomiRedmiNote11128GB.png", 
+        "stock": 25,
+        "description": "Cámara principal: 50 MB + 8 MB + 2 MB + 2 MB - Cámara frontal: 13 MP - Memoria interna (ROM): 128 GB - Memoria Ram: 4 GB - Sistema operativo: Android 11 - Procesador: Snapdragon 680 - Bateria: 5000 mAh"
+    },{
+        "id": 12, 
+        "category": "notebooks", 
+        "product": "HP" , 
+        "model": "15-DY5001LA", 
+        "price": 579599, 
+        "image": "/assets/NotebookHP15DY5001LA.png", 
+        "description": "Cámara principal: HP True Vision 720p HD - Memoria interna (ROM): 512 GB - Memoria Ram: 8 GB - Sistema operativo: Intel i5 - Procesador: Windows 11 - Bateria: Iones de litio de 3 celdas y 41 Wh"
+    },{
+        "id": 13, 
+        "category": "notebooks", 
+        "product": "Dell" , 
+        "model": "Inspiron 15.6", 
+        "price": 369999, 
+        "image": "/assets/NotebookDellInspiron15.6256GB.png", 
+        "stock": 12,
+        "description": "Cámara principal: True Vision 720p HD - Memoria interna (ROM): 216 GB - Memoria Ram: 8 GB - Sistema operativo: Intel Core i3 11va Generación - Procesador: Windows 11 - Bateria: Iones de litio de 3 celdas y 41 Wh"
+    },{
+        "id": 14, 
+        "category": "notebooks", 
+        "product": "Dell" , 
+        "model": "Ryzen 5 15.6", 
+        "price": 399999, 
+        "image": "/assets/NotebookDellRyzen5.png", 
+        "stock": 18,
+        "description": "Cámara principal: True Vision 720p HD - Memoria interna (ROM): 256 GB - Memoria Ram: 8 GB - Sistema operativo: AMD Ryzen™ 5 - Procesador: Windows 11 - Bateria: Iones de litio de 3 celdas y 41 Wh"
+    },{
+        "id": 15, 
+        "category": "notebooks", 
+        "product": "Lenovo" , 
+        "model": "Celeron 14", 
+        "price": 164999, 
+        "image": "/assets/NotebookLenovoCeleron.png", 
+        "stock": 23,
+        "description": "Cámara principal: True Vision 720p HD - Memoria interna (ROM): 500 GB - Memoria Ram: 4 GB - Sistema operativo: Intel Celeron - Procesador: FreeDOS - Bateria: Integrated 35Wh"
+    },{
+        "id": 16, 
+        "category": "notebooks", 
+        "product": "Lenovo" , 
+        "model": "Gamer Ryzen 7", 
+        "price": 659999, 
+        "image": "/assets/NotebookLenovoGamerRyzen7.png", 
+        "stock": 21,
+        "description": "Cámara principal: True Vision 720p HD - Memoria interna (ROM): 512 GB - Memoria Ram: 16 GB - Sistema operativo: AMD Ryzen 7 - Procesador: Windows 11 Home 64 - Bateria: Integrated 60Wh"
+    },{
+        "id": 17, 
+        "category": "notebooks", 
+        "product": "Asus" , 
+        "model": "15.6 Intel Core 3", 
+        "price": 259999, 
+        "image": "/assets/NotebookAsus15.6IntelCoreI3.png", 
+        "stock": 9,
+        "description": "Cámara principal: True Vision 720p HD - Memoria interna (ROM): 256 GB - Memoria Ram: 4 GB - Sistema operativo: Intel Core i3 - Procesador: Windows 11 Home - Bateria: 37WHrs, 2S1P, 2-cell Li-ion"
+    },{
+        "id": 18, 
+        "category": "computers", 
+        "product": "PC" , 
+        "model": "Ryzen 5 5600G", 
+        "price": 316000, 
+        "image": "/assets/PCGamerRyzen55600G.png", 
+        "stock": 35,
+        "description": "Camara: none - Memoria interna (ROM): 480 GB - Memoria Ram: 16 GB - Sistema operativo: Ryzen 5 5600G - Procesador: Windows 11 Home - Bateria: none"
+    },{
+        "id": 19, 
+        "category": "computers", 
+        "product": "PC" , 
+        "model": "Ryzen 5 4600G", 
+        "price": 245000, 
+        "image": "/assets/PCGamerRyzen54600G.png", 
+        "stock": 42,
+        "description": "Camara: none - Memoria interna (ROM): 480 GB - Memoria Ram: 16 GB - Sistema operativo: Ryzen 5 4600G - Procesador: Windows 11 Home - Bateria: none"
+    },{
+        "id": 20, 
+        "category": "computers", 
+        "product": "PC" , 
+        "model": "Ryzen 5 5700G", 
+        "price": 386000, 
+        "image": "/assets/PCGamerRyzen55700G.png", 
+        "stock": 12,
+        "description": "Camara: none - Memoria interna (ROM): 480 GB - Memoria Ram: 16 GB - Sistema operativo: Ryzen 5 5700G - Procesador: Windows 11 Home - Bateria: none"
+    },{
+        "id": 21, 
+        "category": "computers", 
+        "product": "PC" , 
+        "model": "Intel Celeron J4005", 
+        "price": 188000, 
+        "image": "/assets/PCIntelCeleronJ4005.png", 
+        "stock": 25,
+        "description": "Camara: none - Memoria interna (ROM): 1 TB - Memoria Ram: 16 GB - Sistema operativo: Celeron J4005 - Procesador: Windows 11 Home - Bateria: none"
+    },{
+        "id": 22, 
+        "category": "computers", 
+        "product": "Pc" , 
+        "model": "Bangho Cross B02", 
+        "price": 299999, 
+        "image": "/assets/PCBanghoCrossB02.png", 
+        "stock": 5,
+        "description": "Camara: none - Memoria interna (ROM): 240 GB - Memoria Ram: 4 GB - Sistema operativo: Celeron G5905 - Procesador: Windows 11 Home - Bateria: none"
+    },{
+        "id": 23, 
+        "category": "computers", 
+        "product": "PC" , 
+        "model": "Acer Aspire C24", 
+        "price": 499999, 
+        "image": "/assets/PCAcerAspire C24.png", 
+        "stock": 17,
+        "description": "Camara: none - Memoria interna (ROM): 512 GB - Memoria Ram: 8 GB - Sistema operativo: Intel Core i7 - Procesador: Windows 11 Home - Bateria: none"
+    }
+]
