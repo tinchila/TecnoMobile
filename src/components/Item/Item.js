@@ -3,24 +3,33 @@ import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
-const Item = ({item}) => {
+const Item = ({product, model, image, price, id}) => {
     return (
-      <Link to={"/item/" + item.id}>
-    <Col lg={4}>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={item.image} alt={item.product} />
-      <Card.Body>
-        <Card.Title>{item.product}</Card.Title>
-        <Card.Title>{item.model}</Card.Title>
-        <Card.Text>
-            ${item.price}
-        </Card.Text>
-        <Button variant="secondary">Show Details</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    </Link>
+      <Link to={`/item/${id}`}>
+      <Container fluid>
+      <Row xs={'auto'} md={'auto'} className="g-4">
+      {Array.from({ length: 1 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card 
+          bg="light" text="dark" border="dark" style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={image} alt={model} />
+            <Card.Body>
+              <Card.Title>{product}</Card.Title>
+              <Card.Text>{model}</Card.Text>
+              <Card.Text>
+                  ${price}
+              </Card.Text>
+              <Button variant="secondary" to={`/item/${id}`}>Show Details</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+      </Row>
+      </Container>
+      </Link>
   )
 }
 
