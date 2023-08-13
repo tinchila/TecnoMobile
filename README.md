@@ -32,6 +32,7 @@ Para la realizacion de este proyecto se utilizaron las siguientes herramientas q
  React-router-dom: routing de la web
  React-bootstrap
  React-Firebase
+ React-SweetAlert
 
 ##### Data Base
 
