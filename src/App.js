@@ -11,6 +11,7 @@ import Checkout from './components/Checkout/Checkout';
 import CartProvider from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import ItemListContainer from '../src/components/ItemListContainer/ItemListContainer.js';
+import Carousel from '../src/components/Carousel/Carousel';
 
 
 function App() {
@@ -19,19 +20,21 @@ function App() {
       <CartProvider>
       <BrowserRouter>
         <NavBar/>
+        <Carousel/>
         <Routes>
-        <Route path={"/"} element={<ItemListContainer/>}/>
-        <Route path={"/category/:id"} element={<ItemListContainer/>}/>
-        <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
+          <Route path={"/"} element={<ItemListContainer/>}/>
+          <Route path={"/category/:categoryId"} element={<ItemListContainer/>}/>
+          <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
           <Route path={'/contact'} element={<Contact/>}/>
           <Route path={'/cart'} element={<Cart/>}/>
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path={"/checkout"} element={<Checkout />} />
           <Route path={'/singin'} element={<SingIn/>}/>
           <Route path={'/singup'} element={<SingUp/>}/>
           <Route path={"*"} element={<Error/>}/>
         </Routes>
       </BrowserRouter>
       </CartProvider>
+      
     </div>
   );
 }

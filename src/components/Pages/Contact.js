@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
+
 function Example() {
   const [show, setShow] = useState(false);
 
@@ -11,13 +12,21 @@ function Example() {
 
   return (
     <>
+    <div>
+    <img src="/assets/images/contact.png" className="Contact" alt="Contact"/>
+    <h2>Please make your question</h2>
+    </div>
+    <hr />
       <Button variant="secondary" onClick={handleShow}>
-        Contacto
+        Contact
       </Button>
+      <hr />
+      <br />
+      <br />
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Formulario de Contacto</Modal.Title>
+          <Modal.Title>Contact Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -27,13 +36,14 @@ function Example() {
                 type="email"
                 placeholder="name@example.com"
                 autoFocus
+                required
               />
             </Form.Group>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Consulta</Form.Label>
+              <Form.Label>Message</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
           </Form>

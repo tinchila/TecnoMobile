@@ -1,10 +1,12 @@
 import React from 'react'
 import Item from '../Item/Item';
+import Row from 'react-bootstrap/Row';
 
 const ItemList = ({data}) => {
   return (
     <div className='container'>
       <div className='row' id='itemlist'>
+      <Row xs={1} md={2} lg={3} className="g-4">
       {
       data.map((i) => (
           <Item 
@@ -17,6 +19,7 @@ const ItemList = ({data}) => {
           price={i.price}/>)
         )
       }
+       </Row>
       </div>
     </div>
   )

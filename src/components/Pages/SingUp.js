@@ -1,46 +1,110 @@
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
+import React, { useState } from 'react';
+import { Form, Button, Col, Row, Alert } from 'react-bootstrap';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../services/firebase';
+import { useNavigate } from 'react-router-dom';
 
-function GridComplexExample() {
+function SingUp() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [repeatEmail, setRepeatEmail] = useState('');
+  const [repeatPassword, setRepeatPassword] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [passwordLengthValid, setPasswordLengthValid] = useState(true);
+  const navigate = useNavigate();
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+
+    if (email !== repeatEmail || password !== repeatPassword) {
+      console.error('Email or password fields do not match.');
+      return;
+    }
+
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      navigate('/singin');
+    } catch (error) {
+      console.error('Error signing up:', error);
+      setShowAlert(true);
+    }
+  };
+
+  const handlePasswordChange = (value) => {
+    setPassword(value);
+    setPasswordLengthValid(value.length >= 8);
+  };
+
+
   return (
-    <Form>
+    <Form onSubmit={handleSignUp}>
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter Email" />
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <hr />
+          <br />
+          <Form.Label>
+            <h2>Email</h2>
+          </Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <br />
+          <Form.Label>
+            <h2>Password</h2>
+          </Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => handlePasswordChange(e.target.value)}
+            required
+          />
         </Form.Group>
-
         <Form.Group as={Col} controlId="formGridPassword">
-          
-          <Form.Label>Repeat Email</Form.Label>
-          <Form.Control type="email" placeholder="Repeat Email" />
-          <Form.Label>Repeat Password</Form.Label>
-          <Form.Control type="password" placeholder="Repeat Password" />
+          <hr />
+          <br />
+          <Form.Label>
+            <h2>Repeat Email</h2>
+          </Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            value={repeatEmail}
+            onChange={(e) => setRepeatEmail(e.target.value)}
+            required
+          />
+          <br />
+          <Form.Label>
+            <h2>Repeat Password</h2>
+          </Form.Label>
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            value={repeatPassword}
+            onChange={(e) => setRepeatPassword(e.target.value)}
+            required
+          />
         </Form.Group>
       </Row>
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
+        <br />
+        <Form.Label><h2>Address</h2></Form.Label>
         <Form.Control placeholder="1234 Main St" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formGridAddress2">
-        <Form.Label>Address 2</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" />
       </Form.Group>
 
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridCity">
-          <Form.Label>City</Form.Label>
+          <Form.Label><h3>City</h3></Form.Label>
           <Form.Control />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridState">
-          <Form.Label>State</Form.Label>
+          <Form.Label><h3>State</h3></Form.Label>
           <Form.Select defaultValue="Choose...">
             <option>Buenos Aires</option>
             <option>Catamarca</option>
@@ -67,17 +131,28 @@ function GridComplexExample() {
             <option>Tucumán</option>
           </Form.Select>
         </Form.Group>
-
         <Form.Group as={Col} controlId="formGridZip">
-          <Form.Label>Zip</Form.Label>
+          <Form.Label><h3>Zip Code</h3></Form.Label>
           <Form.Control />
         </Form.Group>
       </Row>
+      <hr />
+      <br />
       <Button variant="secondary" type="submit">
-        Register
+        <h3>Register</h3>
       </Button>
+      {!passwordLengthValid && (
+        <Alert variant="danger" className="mt-2">
+          Password debe contener al menos 8 caracteres.
+        </Alert>
+      )}
+      {showAlert && (
+        <Alert variant="danger" className="mt-3">
+          Password incorrec. Please, try again.
+        </Alert>
+      )}
     </Form>
   );
 }
 
-export default GridComplexExample;
+export default SingUp;

@@ -1,8 +1,9 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../../components/CartWidget/CartWidget';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 function NavBar() {
@@ -12,7 +13,7 @@ return (
         <Container>
         <Navbar.Brand as={NavLink} to="/">
             <img
-            src="https://static.vecteezy.com/system/resources/previews/020/927/305/original/tecno-brand-logo-phone-symbol-white-design-chinese-mobile-illustration-with-black-background-free-vector.jpg"
+            src="/assets/images/logo2.png"
             width="150"
             height="100"
             className="d-inline-block align-top"

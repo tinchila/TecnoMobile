@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 import { FaShoppingCart } from "react-icons/fa";
-import Count from '../../components/CartWidget/Count/Count';
 
-class Like extends Component {
-    render() {
-        return (
-            <div class="position-absolute top-50 start-90 translate-middle d-flex justify-content-around m-2 p-2 fs-5">
-            <div class="mw-100"><FaShoppingCart /></div>
-            <Count/>
-        </div>
-        ) 
-    }
-}
+const CartWidget = () => {
+  const { getQuantity } = useContext(CartContext)
+  return (
+    <>
+      <Link to="/cart">
+      <FaShoppingCart color="white" class="fs-3"/>
+        <button style={{ backgroundColor: '#212529', border: 'none' }}>{getQuantity()}</button>
+      </Link>
+    </>
+  );
+};
 
-export default Like
+export default CartWidget;

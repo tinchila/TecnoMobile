@@ -16,7 +16,7 @@ const CartItem = ({item}) => {
                     <div className='col-md-8'>
                         <div className='card-body'>
                             <h5 className='card-title'>{item.product}</h5>
-                            <p className='card-text'>Cantidad: {item.amount}</p>
+                            <p className='card-text'>Cantidades: {item.amount}</p>
                             <p className='card-text'>Precio unitario: {item.price}</p>
                             <p className='card-text'>Precio: {item.price * item.amount}</p>
                             <button className='btn btn-warning' onClick={()=>removeItem(item.id)}>Delete Product</button>
@@ -25,7 +25,6 @@ const CartItem = ({item}) => {
                     </div>
                 </div>
             </div>
-               
         </>
     )
 }

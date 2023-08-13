@@ -1,8 +1,52 @@
-# Getting Started with Create React App
+# Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto realizada en el de React JS de Coder House el cual se trata de un ecommerce de productos tecnologicos en el que podrás navegar por distintas categorías y adquirir tu orden de compra de los productos que has seleccionado dentro de un carrito de compras.
 
-## Available Scripts
+## Installation
+
+Para acceder al proyecto clonándolo, deberás ejecutar en la terminal:
+git clone https://github.com/tinchila/TecnoMobile.git
+npm install 
+npm start
+
+o para descargar el proyecto via WinZip:
+Ir a “code” > download ZIP
+Descomprimir el archivo
+En la carpeta donde se encuentra “package.json” ejecutar en terminal: 
+npm install
+npm start
+
+### Technology
+
+Las principales tecnologias utilizadas en este proyecto son:
+React JS
+JavaScript
+HTML
+CSS
+
+#### Librery
+
+Para la realizacion de este proyecto se utilizaron las siguientes herramientas que aportaron una funcionalidad, estetica y adaptabilidad para mejorar y optimizar la experiencia del usuario en la navegación del e-comerce:
+
+ React-icons
+ React-router-dom: routing de la web
+ React-bootstrap
+ React-Firebase
+
+##### Data Base
+
+Se utilizo Firebase y Firestone donde cada oroducto tiene las siguientes características:
+Field	Type	Value
+product	String	Product type
+model String Model of the product
+category	String	Category of the product
+Image	String	Image of the product
+description	String	Description of the product
+price	number	Price of the product
+stock	number	Stock of the product
+
+
+##### React Deploiment
 
 In the project directory, you can run:
 

@@ -10,23 +10,20 @@ const Item = ({product, model, image, price, id}) => {
     return (
       <Link to={`/item/${id}`}>
       <Container fluid>
-      <Row xs={'auto'} md={'auto'} className="g-4">
-      {Array.from({ length: 1 }).map((_, idx) => (
-        <Col key={idx}>
-          <Card 
-          bg="light" text="dark" border="dark" style={{ width: '18rem' }}>
+      <Row xs={1} md={2} lg={3} className="g-4">
+      <Col>
+          <Card bg="light" text="dark" border="dark" style={{ width: '18rem' }}>
             <Card.Img variant="top" src={image} alt={model} />
             <Card.Body>
               <Card.Title>{product}</Card.Title>
               <Card.Text>{model}</Card.Text>
               <Card.Text>
-                  ${price}
+                  $ {price}
               </Card.Text>
               <Button variant="secondary" to={`/item/${id}`}>Show Details</Button>
             </Card.Body>
           </Card>
         </Col>
-      ))}
       </Row>
       </Container>
       </Link>
